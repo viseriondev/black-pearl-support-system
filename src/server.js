@@ -1,5 +1,4 @@
 import Express from "express";
-import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import { NlpManager } from "node-nlp";
 import morgan from "morgan";
@@ -9,7 +8,6 @@ const manager = new NlpManager({ languages: ["en"] });
 
 const express = Express();
 const PORT = process.env.PORT || 8080;
-dotenv.config();
 
 express.use(bodyParser.json());
 express.use(bodyParser.urlencoded({ extended: true }));
