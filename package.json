@@ -4,8 +4,11 @@
      "main": "./src/index.js",
      "license": "MIT",
      "type": "module",
+     "engines": {
+          "node": "16"
+     },
      "scripts": {
-          "dev": "nodemon ./src/server.js"
+          "start": "nodemon ./src/server.js"
      },
      "dependencies": {
           "@tensorflow-models/universal-sentence-encoder": "^1.3.3",
